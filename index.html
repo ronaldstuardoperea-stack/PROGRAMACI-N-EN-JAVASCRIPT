@@ -267,8 +267,8 @@
                 <p class="text-center">
                     Un ejemplo más completo, utilizando parametros para word y match.</p>
                 <div class="col">
-                <p>
-                <pre><code>function buscarPalabra(word, match) {
+                    <p>
+                    <pre><code>function buscarPalabra(word, match) {
                     for (let i = 0; i < word.length; i++) {
                         word[i];
                         if (word[i] === match) {
@@ -278,10 +278,10 @@
                         }
                     }
                 }</code></pre>
-                <pre><code>buscarPalabra("testing", "t"); </code></pre>
+                    <pre><code>buscarPalabra("testing", "t"); </code></pre>
 
         </p>
-        </div>
+    </div>
     </div>
     <div class="container">
         <div class="row">
@@ -309,9 +309,21 @@
             </div>
             <div class="col">
                 <h3 class="text-center">Literales de Objetos y la Notación de Corchetes</h3>
-                <p>La notación de corchetes es otra forma de acceder a las propiedades de un objeto, utilizando corchetes
+                <p>La notación de corchetes es otra forma de acceder a las propiedades de un objeto, utilizando
+                    corchetes
                     seguidos del nombre de la propiedad.</p>
-                <pre><code>console.log(persona["nombre"]); // Resultado: "Juan"</code></pre>    
+                <pre><code>console.log(persona["nombre"]); // Resultado: "Juan"</code></pre>
+            </div>
+            <h4>Metodos Push y Pop</h4>
+            <p>El método push() se utiliza para agregar un nuevo elemento al final de un array, mientras que el método
+                pop() se utiliza para eliminar el último elemento de un array.</p>
+            <div class="col">
+                <pre><code>let frutas = ["manzana", "banana", "naranja"];
+            frutas.push("uva"); // Agrega "uva" al final del array
+                console.log(frutas); // Resultado: ["manzana", "banana", "naranja", "uva"]
+            frutas.pop(); // Elimina el último elemento del array
+                console.log(frutas); // Resultado: ["manzana", "banana", "naranja"]
+                </code></pre>
             </div>
         </div>
     </div>
