@@ -232,28 +232,87 @@
             <p class="text-center">
                 para ejecutar una función, simplemente se llama por su nombre seguido de paréntesis. Por ejemplo:
                 function saludar() {
-                    console.log("Hola, mundo!");
+                console.log("Hola, mundo!");
                 }
             </p>
             <h4 class="text-center">Parámetros y Valores de Retorno</h4>
             <p class="text-center">
-                Los parámetros son variables que se utilizan para recibir valores cuando se llama a una función. Los valores de retorno son los resultados que una función devuelve después de su ejecución. Por ejemplo:
+                Los parámetros son variables que se utilizan para recibir valores cuando se llama a una función. Los
+                valores de retorno son los resultados que una función devuelve después de su ejecución. Por ejemplo:
                 function sumar(a, b) {
-                    return a + b;
+                return a + b;
                 }
             </p>
         </div>
         <h3 class="text-center">Arrays</h3>
         <p class="text-center">
-            Los arrays son estructuras de datos que permiten almacenar múltiples valores en una sola variable. Cada valor en un array tiene un índice que indica su posición.
+            Los arrays son estructuras de datos que permiten almacenar múltiples valores en una sola variable. Cada
+            valor en un array tiene un índice que indica su posición.
         </p>
         <div class="col col-12">
             <h4 class="text-center">Declaración y Acceso a Elementos</h4>
             <p class="text-center">
-                Para declarar un array, se utilizan corchetes []. Para acceder a los elementos de un array, se utiliza el índice del elemento entre corchetes. Por ejemplo:
+                Para declarar un array, se utilizan corchetes []. Para acceder a los elementos de un array, se utiliza
+                el índice del elemento entre corchetes. Por ejemplo:
                 let frutas = ["manzana", "banana", "naranja"];
                 console.log(frutas[0]); // Resultado: "manzana"
             </p>
+        </div>
+        <h3 class="text-center">Recorrer un Array dentro de una función</h3>
+        <p class="text-center">
+            Para recorrer un array dentro de una función, se puede utilizar un ciclo for o el método forEach(). Por
+            ejemplo:
+            function imprimirElementos(array) {
+            for (let i = 0; i < array.length; i++) { console.log(array[i]); } } </p>
+                <p class="text-center">
+                    Un ejemplo más completo, utilizando parametros para word y match.</p>
+                <div class="col">
+                <p>
+                <pre><code>function buscarPalabra(word, match) {
+                    for (let i = 0; i < word.length; i++) {
+                        word[i];
+                        if (word[i] === match) {
+                            console.log("La palabra " + match + " se encuentra en la posición " + i + ".");
+                        }else {
+                            console.log("La palabra " + match + " no se encuentra en la posición " + i + ".");
+                        }
+                    }
+                }</code></pre>
+                <pre><code>buscarPalabra("testing", "t"); </code></pre>
+
+        </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center">Objetos</h3>
+            <div class="col col-12">
+                <p>Los objetos son estructuras de datos que permiten almacenar múltiples valores en una sola variable,
+                    donde cada valor tiene un nombre (llave) y un valor asociado.</p>
+                <p>Por ejemplo:</p>
+                <pre><code>let persona = {
+    nombre: "Juan",
+    edad: 30,
+    ciudad: "Madrid"
+};</code></pre>
+                <p>En este ejemplo, hemos creado un objeto llamado "persona" con tres propiedades: "nombre", "edad" y
+                    "ciudad". Cada propiedad tiene un valor asociado.</p>
+                <p>Para acceder a las propiedades de un objeto, se utiliza la notación de punto o la notación de
+                    corchetes. Por ejemplo:</p>
+                <pre><code>console.log(persona.nombre); // Resultado: "Juan"</code></pre>
+            </div>
+            <div class="col">
+                <h3 class="text-center">Literales de Objetos y la Notación de Puntos</h3>
+                <p>Los literales de objetos son una forma de crear objetos utilizando una sintaxis más concisa. La
+                    notación de puntos es una forma de acceder a las propiedades de un objeto utilizando un punto
+                    seguido del nombre de la propiedad.</p>
+            </div>
+            <div class="col">
+                <h3 class="text-center">Literales de Objetos y la Notación de Corchetes</h3>
+                <p>La notación de corchetes es otra forma de acceder a las propiedades de un objeto, utilizando corchetes
+                    seguidos del nombre de la propiedad.</p>
+                <pre><code>console.log(persona["nombre"]); // Resultado: "Juan"</code></pre>    
+            </div>
         </div>
     </div>
 

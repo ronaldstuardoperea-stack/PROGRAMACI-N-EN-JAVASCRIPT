@@ -15,9 +15,10 @@ body{
     box-sizing: border-box;
 }
 
-.col{
+.col, .col-12{
     background-color: azure;
     border-radius: 10px;
+    padding: 10px;
     margin: 4px;
 }
 
