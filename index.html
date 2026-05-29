@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center">Variables</h2>
+            <p class="text-center">Las variables son contenedores para almacenar información.</p>
+            <h3 class="text-center">Declaración de Variables</h3>
+            <p class="text-center">Para declarar una variable en JavaScript, se utiliza la palabra clave "let" o "var".
+                Declarar una variable es el proceso de crear un espacio en la memoria para almacenar un valor. Por
+                ejemplo:
+                let nombre;
+                la variable "nombre" ha sido declarada, pero aún no tiene un valor asignado.
+            </p>
+            <h3 class="text-center">Asignación de Variables</h3>
+            <p class="text-center">Para asignar un valor a una variable, se utiliza el operador de asignación (=). Por
+                ejemplo:
+                nombre = "Juan";
+            </p>
+            <p class="text-center">Podemos saludar en la consola usando console.log("Hola "+nombre);
+                Y como resultado obtendremos "Hola Juan" en la consola.
+            </p>
+            <h3 class="text-center">Tipos de Datos</h3>
+            <div class="col">
+                <h4 class="text-center">String</h4>
+                <p class="text-center">
+                    Una variable de tipo string es una secuencia de caracteres. Se declara utilizando comillas simples o
+                    dobles.
+                </p>
+            </div>
+            <div class="col ">
+                <h4 class="text-center">Number</h4>
+                <p class="text-center">
+                    Una variable de tipo number es un valor numérico. Puede ser un número entero o un número decimal.
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="text-center">Boolean</h4>
+                <p class="text-center">
+                    Una variable de tipo boolean es un valor lógico que puede ser verdadero (true) o falso (false).
+                    Es útil para tomar decisiones en el código, como en estructuras de control condicionales (if, else).
+                </p>
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="text-center">Null</h4>
+                <p class="text-center">
+                    Una variable de tipo null es un valor especial que representa la ausencia de un valor.
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="text-center">Undefined</h4>
+                <p class="text-center">
+                    Una variable de tipo undefined es un valor que se asigna automáticamente a una variable que ha sido
+                    declarada pero no ha sido inicializada.
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="text-center">Bigint</h4>
+                <p class="text-center">
+                    Una variable de tipo bigint es un tipo de dato que permite representar números enteros de gran
+                    tamaño.
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="text-center">Symbol</h4>
+                <p class="text-center">
+                    Una variable de tipo symbol es un valor único e immutable que se utiliza comúnmente como
+                    identificador para propiedades de objetos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center">Operadores Matemáticos</h2>
+            <p class="text-center">Los operadores matemáticos son símbolos que se utilizan para realizar operaciones
+                matemáticas en JavaScript. Algunos de los operadores matemáticos más comunes son:</p>
+            <table class="table">
+                <tr>
+                    <th>Operador</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Suma dos números o concatena dos cadenas de texto.</td>
+                    <td>5 + 3 // Resultado: 8<br>"Hola " + "Mundo" // Resultado: "Hola Mundo"</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Resta dos números.</td>
+                    <td>5 - 3 // Resultado: 2</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplica dos números.</td>
+                    <td>5 * 3 // Resultado: 15</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Divide dos números.</td>
+                    <td>5 / 3 // Resultado: 1.666...</td>
+                </tr>
+            </table>
+            <h2 class="text-center">Operadores de Comparación</h2>
+            <p class="text-center">Los operadores de comparación son símbolos que se utilizan para comparar dos valores
+                en JavaScript. Algunos de los operadores de comparación más comunes son:</p>
+            <table class="table">
+                <tr>
+                    <th>Operador</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Compara si un valor es mayor que otro.</td>
+                    <td>5 > 3 // Resultado: true</td>
+                </tr>
+                <tr>
+                    <td>
+                        << /td>
+                    <td>Compara si un valor es menor que otro.</td>
+                    <td>5 < 3 // Resultado: false</td>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>Compara si un valor es igual que otro.</td>
+                    <td>5 == 3 // Resultado: false</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Compara si un valor es diferente que otro.</td>
+                    <td>5 != 3 // Resultado: true</td>
+                </tr>
+            </table>
+            <h2 class="text-center">Operadores Lógicos</h2>
+            <p class="text-center">Los operadores lógicos son símbolos que se utilizan para combinar dos o más
+                expresiones lógicas en JavaScript. Algunos de los operadores lógicos más comunes son:</p>
+            <table class="table">
+                <tr>
+                    <th>Operador</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>&&</td>
+                    <td>Operador lógico AND. Devuelve true si ambas expresiones son verdaderas.</td>
+                    <td>(5 > 3) && (2 < 4) // Resultado: true</td>
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>Operador lógico OR. Devuelve true si al menos una de las expresiones es verdadera.</td>
+                    <td>(5 > 3) || (2 > 4) // Resultado: true</td>
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Operador lógico NOT. Devuelve true si la expresión es falsa.</td>
+                    <td>!(5 > 3) // Resultado: false</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center">Condicionales</h3>
+            <p class="text-center">Los condicionales son estructuras de control que permiten ejecutar diferentes bloques
+                de código según se cumpla o no una condición.
+
+            </p>
+            <div class="col col-12">
+                <h4 class="text-center">Condicional If y Else</h4>
+                <p class="text-center">El condicional If y Else permite ejecutar un bloque de código si se cumple una
+                    condición, o otro bloque si no se cumple.
+                    Se usan condiciones booleanas para evaluar si una expresión es verdadera o falsa.
+                </p>
+            </div>
+            <div class="col col-12">
+                <h4 class="text-center">Ciclo Switch</h4>
+                <p class="text-center">El ciclo Switch permite ejecutar diferentes bloques de código según el valor de
+                    una variable.
+                    podemos optimizar el código utilizando el ciclo Switch en lugar de múltiples condicionales If y
+                    Else.
+                </p>
+            </div>
+            <h3 class="text-center">Ciclos</h3>
+            <p class="text-center">Los ciclos son estructuras de control que permiten ejecutar un bloque de código
+                varias veces.
+
+            </p>
+            <div class="col">
+                <h4 class="text-center">Ciclo For</h4>
+                <p class="text-center">El ciclo For permite ejecutar un bloque de código un número específico de veces.
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="text-center">Ciclo While</h4>
+                <p class="text-center">El ciclo While permite ejecutar un bloque de código mientras se cumpla una
+                    condición.</p>
+            </div>
+            <div class="col col-12">
+                <h4 class="text-center">Ciclo Anidado</h4>
+                <p class="text-center">El ciclo Anidado permite ejecutar un bloque de código dentro de otro bloque de
+                    código.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center">
+                Funciones
+            </h3>
+            <p class="text-center">Las funciones son bloques de código reutilizables que realizan una tarea específica.
+                DRY (Don't Repeat Yourself) es un principio de programación que promueve la reutilización de código para
+                evitar la duplicación. Las funciones son una herramienta clave para lograr esto, ya que permiten
+                encapsular un bloque de código que realiza una tarea específica y luego reutilizarlo en diferentes
+                partes del programa. Al utilizar funciones, podemos mejorar la legibilidad, mantenibilidad y eficiencia
+                de nuestro código, evitando la repetición innecesaria y facilitando la gestión de cambios futuros.
+            </p>
+            <p class="text-center">
+                para ejecutar una función, simplemente se llama por su nombre seguido de paréntesis. Por ejemplo:
+                function saludar() {
+                    console.log("Hola, mundo!");
+                }
+            </p>
+            <h4 class="text-center">Parámetros y Valores de Retorno</h4>
+            <p class="text-center">
+                Los parámetros son variables que se utilizan para recibir valores cuando se llama a una función. Los valores de retorno son los resultados que una función devuelve después de su ejecución. Por ejemplo:
+                function sumar(a, b) {
+                    return a + b;
+                }
+            </p>
+        </div>
+        <h3 class="text-center">Arrays</h3>
+        <p class="text-center">
+            Los arrays son estructuras de datos que permiten almacenar múltiples valores en una sola variable. Cada valor en un array tiene un índice que indica su posición.
+        </p>
+        <div class="col col-12">
+            <h4 class="text-center">Declaración y Acceso a Elementos</h4>
+            <p class="text-center">
+                Para declarar un array, se utilizan corchetes []. Para acceder a los elementos de un array, se utiliza el índice del elemento entre corchetes. Por ejemplo:
+                let frutas = ["manzana", "banana", "naranja"];
+                console.log(frutas[0]); // Resultado: "manzana"
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
