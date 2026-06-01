@@ -328,6 +328,21 @@
                     concisa. Por ejemplo:</p>
                 <pre><code>let frutas = ["manzana", "banana", "naranja"];</code></pre>
             </div>
+            <div class="col">
+                <p class="text-center">
+                    Si el objeto tiene una propiedad que es una función, se llama método. Por ejemplo:</p>
+                <pre><code>let persona = {
+    nombre: "Juan",
+    edad: 30,
+    ciudad: "Madrid",
+    saludar: function() {
+        console.log("Hola, soy " + this.nombre);
+    }
+};</code></pre>
+                <p class="text-center">En este ejemplo, la propiedad "saludar" es un método que imprime un mensaje de
+                    saludo
+                    utilizando el nombre de la persona.</p>
+            </div>
             <h4>Metodos Push y Pop</h4>
             <p>El método push() se utiliza para agregar un nuevo elemento al final de un array, mientras que el método
                 pop() se utiliza para eliminar el último elemento de un array.</p>
@@ -346,7 +361,7 @@
                 <tr>
                     <th>Propiedad/Método</th>
                     <th>Descripción</th>
-                    <th>Ejemplo</th>       
+                    <th>Ejemplo</th>
                 </tr>
                 <tr>
                     <td>Math.PI</td>
@@ -380,7 +395,8 @@
                 </tr>
             </table>
             <h4 class="text-center">Métodos de Redondeo</h4>
-            p>El objeto Math también proporciona métodos para redondear números. Algunos de los métodos de redondeo más comunes son:</p>
+            <p>El objeto Math también proporciona métodos para redondear números. Algunos de los métodos de redondeo más
+                comunes son:</p>
             <table class="table">
                 <tr>
                     <th>Método</th>
@@ -408,7 +424,8 @@
                     <td>Math.trunc(3.9) // Resultado: 3</td>
             </table>
             <h4 class="text-center">Métodos de Potenciación y Raíz Cuadrada</h4>
-            <p>El objeto Math también proporciona métodos para realizar operaciones de potenciación y raíz cuadrada. Algunos de los métodos más comunes son:</p>
+            <p>El objeto Math también proporciona métodos para realizar operaciones de potenciación y raíz cuadrada.
+                Algunos de los métodos más comunes son:</p>
             <table class="table">
                 <tr>
                     <th>Método</th>
@@ -427,7 +444,8 @@
                 </tr>
             </table>
             <h3 class="text-center">Métodos de String</h3>
-            <p class="text-center">El objeto String en JavaScript proporciona varios métodos para manipular cadenas de texto. Algunos de los métodos más comunes son:</p>
+            <p class="text-center">El objeto String en JavaScript proporciona varios métodos para manipular cadenas de
+                texto. Algunos de los métodos más comunes son:</p>
             <table class="table">
                 <tr>
                     <th>Método</th>
@@ -469,7 +487,43 @@
                     <td>Devuelve la cadena en minúsculas.</td>
                     <td>"HOLA".toLowerCase() // Resultado: "hola"</td>
                 </tr>
-    
+            </table>
+            <h3 class="text-center">Operador typeof</h3>
+            <p class="text-center">El operador typeof se utiliza para obtener el tipo de dato de una variable o expresión en
+                JavaScript. Devuelve una cadena que indica el tipo de dato. Algunos de los tipos de datos que
+                typeof puede devolver son:</p>
+            <table class="table">
+                <tr>
+                    <th>Tipo de Dato</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>string</td>
+                    <td>Indica que la variable es una cadena de texto.</td>
+                    <td>typeof "Hola" // Resultado: "string"</td>
+                </tr>
+                <tr>
+                    <td>number</td>
+                    <td>Indica que la variable es un número.</td>
+                    <td>typeof 42 // Resultado: "number"</td>
+                </tr>
+                <tr>
+                    <td>boolean</td>
+                    <td>Indica que la variable es un valor lógico (true o false).</td>
+                    <td>typeof true // Resultado: "boolean"</td>
+                </tr>
+                <tr>
+                    <td>object</td>
+                    <td>Indica que la variable es un objeto (incluyendo arrays y null).</td>
+                    <td>typeof { nombre: "Juan" } // Resultado: "object"</td>
+                </tr>
+                <tr>
+                    <td>function</td>
+                    <td>Indica que la variable es una función.</td>
+                    <td>typeof function() {} // Resultado: "function"</td>
+                </tr>
+            </table>
         </div>
     </div>
 
