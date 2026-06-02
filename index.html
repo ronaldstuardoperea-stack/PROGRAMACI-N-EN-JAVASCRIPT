@@ -527,6 +527,66 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">Error</h3>
+                <p class="text-center">Un error es un problema que impide que un programa se ejecute correctamente.</p>
+            </div>
+            <div class="col">
+                <h3 class="text-center">Bug</h3>
+                <p class="text-center">Un bug es un defecto en el código que causa un comportamiento no deseado o incorrecto.
+                    Sin embargo el codigo puede ejecutarse, pero no produce el resultado esperado.</p>
+                </p>
+            </div>
+            <table class="table">
+                <tr>
+                    <th>Tipo de Error</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>Sintaxis</td>
+                    <td>Ocurre cuando el código no sigue las reglas de sintaxis de JavaScript.</td>
+                    <td>let x = 5 // Falta el punto y coma al final de la línea</td>
+                </tr>
+                <tr>
+                    <td>Referencia</td>
+                    <td>Ocurre cuando se intenta acceder a una variable que no ha sido declarada.</td>
+                    <td>console.log(y); // y no ha sido declarada previamente</td>
+                </tr>
+                <tr>
+                    <td>Tipo</td>
+                    <td>Ocurre cuando se intenta realizar una operación con un tipo de dato incompatible.</td>
+                    <td>let z = "5" + 3; // Resultado: "53" (concatenación en lugar de suma)</td>
+                </tr>
+            </table>
+            <h3 class="text-center">Declaraciones Throw, Try y Catch</h3>
+            <table class="table">
+                <tr>
+                    <th>Declaración</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+                <tr>
+                    <td>throw</td>
+                    <td>Se utiliza para lanzar un error personalizado.</td>
+                    <td>throw new Error("Mensaje de error");</td>
+                </tr>
+                <tr>
+                    <td>try</td>
+                    <td>Se utiliza para intentar ejecutar un bloque de código.</td>
+                    <td>try { // Código que puede lanzar un error } catch (error) { // Manejo del error }</td>
+                </tr>
+                <tr>
+                    <td>catch</td>
+                    <td>Se utiliza para capturar y manejar los errores que ocurren en el bloque try.</td>
+                    <td>try { // Código que puede lanzar un error } catch (error) { // Manejo del error }</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
