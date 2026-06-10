@@ -621,7 +621,73 @@
                 <p class="text-center">La programación orientada a objetos es un paradigma de programación que organiza el código en torno a objetos y datos.</p>
             </div>
         </div>
+        <h3 class="text-center">Scope o Ámbito</h3>
+        <p class="text-center">El scope o ámbito se refiere al alcance de las variables en un programa. Determina dónde una variable es accesible y cómo se comporta dentro de diferentes bloques de código.</p>
+        <h4 class="text-center">El uso de var, let y const en el scope</h4>
+        <p class="text-center">En JavaScript, var, let y const son palabras clave utilizadas para declarar variables, y cada una tiene un comportamiento diferente en cuanto al scope:</p>
+        <table class="table">
+            <tr>
+                <th>Palabra Clave</th>
+                <th>Scope</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>var</td>
+                <td>Función</td>
+                <td>Las variables declaradas con var tienen un scope de función, lo que significa que son accesibles dentro de la función en la que se declaran, pero no fuera de ella.</td>
+            </tr>
+            <tr>
+                <td>let</td>
+                <td>Bloque</td>
+                <td>Las variables declaradas con let tienen un scope de bloque, lo que significa que son accesibles solo dentro del bloque en el que se declaran (por ejemplo, dentro de un if o un for).</td>
+            </tr>
+            <tr>
+                <td>const</td>
+                <td>Bloque</td>
+                <td>Las variables declaradas con const también tienen un scope de bloque, pero además son inmutables, lo que significa que su valor no puede ser reasignado después de su declaración.</td>
+            </tr>
+        </table>
+        <h5>Consejo Profesional</h5>
+        <p class="text-center">Usa let si el valor puede cambiar, y const si el valor no puede cambiar después de su declaración.</p>
+        <h3 class="text-center">Programación Orientada a Objetos</h3>
+        <p class="text-center">La programación orientada a objetos es un paradigma de programación que organiza el código en torno a objetos y datos.</p>
+        <p class="text-center">Se basa en el concepto de "objetos", que son instancias de clases que contienen datos y funciones.</p>
+        <p class="text-center">Una clase es un molde o plantilla que define las propiedades y métodos que tendrán los objetos de ese tipo.</p>
+        <p class="text-center">Las clases se crean utilizando la palabra clave "class". Ejemplo: class Persona { constructor(nombre, edad) { this.nombre = nombre; this.edad = edad; } }</p>
+        <p class="text-center">La programación tiene 4 principios fundamentales: encapsulamiento, abstracción, herencia y polimorfismo.</p>
+        <table class="table">
+            <tr>
+                <th>Principio</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Encapsulamiento</td>
+                <td>La capacidad de ocultar los detalles de implementación de un objeto y exponer solo los métodos y propiedades necesarios.</td>
+                <td> Para lograr el encapsulamiento en JavaScript, se pueden utilizar funciones constructoras o clases para definir objetos y sus métodos. Por ejemplo:
+                    <pre><code>class Persona {
+    constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+}</code></pre></td>
+            </tr>
+            <tr>
+                <td>Abstracción</td>
+                <td>La capacidad de simplificar la complejidad de un sistema al enfocarse en los aspectos esenciales y ocultar los detalles no esenciales.</td>
+                <td>Por ejemplo, al crear una clase "Vehículo", podemos abstraer los detalles específicos de cada tipo de vehículo y enfocarnos en las propiedades y métodos comunes.</td>
+            </tr>
+            <tr>
+                <td>Herencia</td>
+                <td>La capacidad de crear nuevas clases basadas en clases existentes, heredando sus propiedades y métodos.</td>
+                <td>Para establecer herencia en JavaScript, se utiliza la palabra clave "extends". Por ejemplo: class Estudiante extends Persona { }</td>
+            </tr>
+            <tr>
+                <td>Polimorfismo</td>
+                <td>La capacidad de un objeto de tomar múltiples formas, permitiendo que un mismo método se comporte de manera diferente según el objeto sobre el que se aplica.</td>
+            </tr>
+        </table>
     </div>
+
 
 
 
