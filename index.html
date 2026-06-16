@@ -722,6 +722,57 @@
                 </tr>
             </tbody>
         </table>
+        <h3 class="text-center">Desestructuración</h3>
+        <p class="text-center">La desestructuración es una característica de JavaScript que permite extraer valores de arrays o propiedades de objetos de manera más concisa.</p>
+        <pre><code>let [a, b] = [1, 2];
+let { nombre, edad } = { nombre: "Juan", edad: 30 };</code></pre>
+            <h3 class="text-center">Bucle For of</h3>
+            <p class="text-center">El bucle for...of permite iterar sobre los valores de un objeto iterable.</p>
+            <pre><code>let frutas = ["manzana", "banana", "naranja"];
+for (let fruta of frutas) {
+    console.log(fruta);
+}</code></pre>
+
+        <p>No se puede usar for...of para iterar sobre objetos que no son iterables, como objetos literales.
+            Si se pueda usar for...of para iterar sobre objetos que son iterables, como arrays, strings, maps, sets, etc.
+            Puedes utilizar el hecho de que un bucle for of puede ejecutarse sobre matrices para recorrer objetos.
+        </p> 
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Metodo</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Object.keys()</td>
+                    <td>Devuelve un array con las claves de un objeto.</td>
+                    <td>let persona = { nombre: "Juan", edad: 30 }; console.log(Object.keys(persona)); // Resultado: ["nombre", "edad"]</td>
+                </tr>
+                <tr>
+                    <td>Object.values()</td>
+                    <td>Devuelve un array con los valores de un objeto.</td>
+                    <td>let persona = { nombre: "Juan", edad: 30 }; console.log(Object.values(persona)); // Resultado: ["Juan", 30]</td>
+                </tr>
+                <tr>
+                    <td>Object.entries()</td>
+                    <td>Devuelve un array de pares clave-valor de un objeto.</td>
+                    <td>let persona = { nombre: "Juan", edad: 30 }; console.log(Object.entries(persona)); // Resultado: [["nombre", "Juan"], ["edad", 30]]</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="text-center">Bucle For in</h3>
+        <p class="text-center">El bucle for...in se utiliza para iterar sobre las propiedades enumerables de un objeto.</p>
+        <pre><code>let persona = { nombre: "Juan", edad: 30 };
+for (let clave in persona) {
+    console.log(clave + ": " + persona[clave]);
+}</code></pre>
+        <p>Resultado:</p>
+        <p>nombre: Juan</p>
+        <p>edad: 30</p>
+        <p>El bucle for...in itera sobre las claves de un objeto, no sobre los valores. Para acceder a los valores, se utiliza la notación de corchetes con la clave.</p>
     </div>
 
 
