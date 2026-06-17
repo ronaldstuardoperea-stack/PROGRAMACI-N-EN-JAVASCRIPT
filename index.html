@@ -765,6 +765,7 @@ for (let fruta of frutas) {
         </table>
         <h3 class="text-center">Bucle For in</h3>
         <p class="text-center">El bucle for...in se utiliza para iterar sobre las propiedades enumerables de un objeto.</p>
+        <div class="col">
         <pre><code>let persona = { nombre: "Juan", edad: 30 };
 for (let clave in persona) {
     console.log(clave + ": " + persona[clave]);
@@ -772,7 +773,18 @@ for (let clave in persona) {
         <p>Resultado:</p>
         <p>nombre: Juan</p>
         <p>edad: 30</p>
+        </div>
         <p>El bucle for...in itera sobre las claves de un objeto, no sobre los valores. Para acceder a los valores, se utiliza la notación de corchetes con la clave.</p>
+    <h3 class="text-center">Literales de Plantillas</h3>
+    <p class="text-center">Las literales de plantillas son una forma de crear cadenas de texto que pueden contener expresiones embebidas. Se utilizan comillas invertidas (`) para delimitar la cadena y ${} para insertar las expresiones.
+        También permiten crear cadenas de texto multilínea sin necesidad de usar caracteres de escape. Por ejemplo:</p>
+    <div class="col">
+        <pre><code>let nombre = "Juan";
+let edad = 30;
+let mensaje = `Hola, me llamo ${nombre} y tengo ${edad} años.`;
+console.log(mensaje); // Resultado: "Hola, me llamo Juan y tengo 30 años."`
+    </code></pre>
+        </div>
     </div>
 
 
