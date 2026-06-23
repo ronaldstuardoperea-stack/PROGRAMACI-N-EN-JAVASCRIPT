@@ -1011,6 +1011,72 @@ console.log(sumar(1, 2, 3, 4, 5));
                         <td>document.getElementsByClassName('myClass')</td>
                 </tbody>
             </table>
+            <h3 class="text-center">Eventos</h3>
+            <p>Los eventos son acciones o sucesos que ocurren en el navegador, como hacer clic en un botón, mover el
+                ratón, presionar una tecla, cargar una página, entre otros. Los eventos permiten a los desarrolladores
+                web crear interactividad y responder a las acciones del usuario.</p>
+            <p>Los eventos se pueden manejar utilizando funciones llamadas "manejadores de eventos" o "event listeners".</p>
+            <p>Todos los tipos de eventos son:</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>click</td>
+                        <td>Se dispara cuando se hace clic en un elemento.</td>
+                        <td>element.addEventListener('click', function() { alert('Elemento clickeado'); });</td>
+                    </tr>
+                    <tr>
+                        <td>mouseover</td>
+                        <td>Se dispara cuando el puntero del ratón se mueve sobre un elemento.</td>
+                        <td>element.addEventListener('mouseover', function() { alert('Mouse sobre el elemento'); });</td>
+                    </tr>
+                    <tr>
+                        <td>keydown</td>
+                        <td>Se dispara cuando se presiona una tecla en el teclado.</td>
+                        <td>document.addEventListener('keydown', function(event) { console.log('Tecla presionada: ' + event.key); });</td>
+                    </tr>
+                    <tr>
+                        <td>load</td>
+                        <td>Se dispara cuando la página web ha terminado de cargarse.</td>
+                        <td>window.addEventListener('load', function() { console.log('Página cargada'); });</td>
+                    </tr>
+                    <tr>
+                        <td>submit</td>
+                        <td>Se dispara cuando se envía un formulario.</td>
+                        <td>form.addEventListener('submit', function(event) { event.preventDefault(); console.log('Formulario enviado'); });</td>
+                    </tr>
+                    <tr>
+                        <td>resize</td>
+                        <td>Se dispara cuando se cambia el tamaño de la ventana del navegador.</td>
+                        <td>window.addEventListener('resize', function() { console.log('Tamaño de ventana cambiado'); });</td>
+                    </tr>
+                    <tr>
+                        <td>scroll</td>
+                        <td>Se dispara cuando se desplaza la página o un elemento con barra de desplazamiento.</td>
+                        <td>window.addEventListener('scroll', function() { console.log('Página desplazada'); });</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Hay varias formas de agregar manejadores de eventos a los elementos del DOM.</p>
+            <p>Pueden ser agregados directamente en el HTML usando atributos como `onclick`, o pueden ser agregados dinámicamente en JavaScript utilizando el método `addEventListener`. por ejemplo:</p>
+            <div class="col">
+                <pre><code>
+                // Agregar un manejador de eventos usando addEventListener
+                const boton = document.getElementById('miBoton');
+                boton.addEventListener('click', function() {
+                    alert('Botón clickeado');
+                });
+                // Agregar un manejador de eventos usando el atributo onclick en HTML
+                // <button id="miBoton" onclick="alert('Botón clickeado')">Clickeame</button>
+                </code></pre>
+            </div>
+
         </div>
     </div>
 
