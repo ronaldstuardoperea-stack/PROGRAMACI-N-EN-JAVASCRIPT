@@ -1076,7 +1076,71 @@ console.log(sumar(1, 2, 3, 4, 5));
                 // <button id="miBoton" onclick="alert('Botón clickeado')">Clickeame</button>
                 </code></pre>
             </div>
-
+            <h3 class="text-center">JSON(Javascript Object Notation) </h3>
+            <p>JSON (JavaScript Object Notation) es un formato de intercambio de datos ligero y fácil de leer y escribir para los humanos, y fácil de analizar y generar para las máquinas.
+                Además, JSON es un subconjunto de la notación literal de objetos de JavaScript, lo que significa que se basa en la misma sintaxis que los objetos de JavaScript.</p>
+            <p>JSON se utiliza comúnmente para enviar y recibir datos entre un cliente y un servidor en aplicaciones web. Los datos se representan como pares clave-valor, donde las claves son cadenas de texto y los valores pueden ser cadenas, números, booleanos, arrays u objetos.</p>
+            <p>Ejemplo de un objeto JSON:</p>
+            <div class="col">
+                <pre><code>
+                {
+                    "nombre": "Juan",
+                    "edad": 30,
+                    "ciudad": "Madrid",
+                    "hobbies": ["fútbol", "lectura", "viajar"],
+                    "direccion": {
+                        "calle": "Calle Mayor",
+                        "numero": 123,
+                        "codigoPostal": 28013
+                    }
+                }
+                </code></pre>
+            </div>
+                <h4 class="text-center">Notación JSON</h4>
+                <p>La notación JSON sigue una estructura específica:</p>
+                <ul>
+                    <li>Los datos se representan como pares clave-valor, separados por comas.</li>
+                    <li>Las claves deben ser cadenas de texto entre comillas dobles.</li>
+                    <li>Los valores pueden ser cadenas, números, booleanos, arrays u objetos.</li>
+                    <li>Los objetos se delimitan con llaves {} y los arrays con corchetes [].</li>
+                </ul>
+                <p>Ejemplo de un objeto JSON con diferentes tipos de valores:</p>
+                <div class="col">
+                    <pre><code>
+                    {
+                        "nombre": "Juan",
+                        "edad": 30,
+                        "ciudad": "Madrid",
+                        "hobbies": ["fútbol", "lectura", "viajar"],
+                        "direccion": {
+                            "calle": "Calle Mayor",
+                            "numero": 123,
+                            "codigoPostal": 28013
+                        }
+                    }
+                    </code></pre>
+                </div>
+                <h4 class="text-center">Convertir JSON a JavaScript y viceversa</h4>
+                <p>Para convertir un objeto JSON a un objeto JavaScript, se utiliza el método `JSON.parse()`. Este método toma una cadena JSON como entrada y devuelve un objeto JavaScript correspondiente.</p>
+                <p>Ejemplo:</p>
+                <div class="col">
+                    <pre><code>
+const jsonString = '{"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}';
+const objetoJavaScript = JSON.parse(jsonString);
+console.log(objetoJavaScript.nombre); // Resultado: "Juan"
+console.log(objetoJavaScript.edad); // Resultado: 30
+console.log(objetoJavaScript.ciudad); // Resultado: "Madrid"
+                    </code></pre>
+                </div>
+                <p>Ahora para convertir un objeto JavaScript a una cadena JSON, se utiliza el método `JSON.stringify()`. Este método toma un objeto JavaScript como entrada y devuelve una cadena JSON correspondiente.</p>
+                <p>Ejemplo:</p>
+                <div class="col">
+                    <pre><code>
+const objetoJavaScript = { nombre: "Juan", edad: 30, ciudad: "Madrid" };
+const jsonString = JSON.stringify(objetoJavaScript);
+console.log(jsonString); // Resultado: '{"nombre":"Juan","edad":30,"ciudad":"Madrid"}'
+                    </code></pre>
+                </div>
         </div>
     </div>
 
